@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/covidpreventionicon"
+    android:foreground="?android:attr/selectableItemBackground"
+
+
+
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        app:titleMarginStart="@dimen/_40sdp"
+        ></androidx.appcompat.widget.Toolbar>
+
+
+
+    <Button
+        android:id="@+id/worldstat"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/worldicon"
+
+        android:layout_below="@id/toolbar"
+
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:width="@dimen/_120sdp"
+        android:height="@dimen/_120sdp"
+
+        />
+
+    <Button
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+
+        android:layout_below="@id/toolbar"
+
+        android:background="@drawable/indiaicon"
+        android:id="@+id/indiastat"
+        android:layout_toEndOf="@id/worldstat"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:width="@dimen/_120sdp"
+        android:height="@dimen/_120sdp"
+
+
+
+
+        />
+
+    <Button
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/newsinfo"
+        android:id="@+id/westbengalstat"
+        android:layout_below="@id/worldstat"
+
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:width="@dimen/_120sdp"
+        android:height="@dimen/_120sdp"
+
+
+
+
+        />
+    <Button
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/whoicon"
+        android:id="@+id/infofromwho"
+        android:layout_below="@id/indiastat"
+        android:layout_toEndOf="@id/westbengalstat"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+
+        android:width="@dimen/_120sdp"
+        android:height="@dimen/_120sdp"
+
+
+
+
+        />
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1579472841958106/4688754438">
+
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>

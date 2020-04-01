@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">COVID-19InfoDemo</string>
+    <string name="aboutme">Hello,this is Narendra Nath Chatterjee from Jadavpur University Electrical Engineering 4th Year. I hope you are doing fine in these troubling times. I do not own any of the websites listed here.Live TV in News might not work for older phones.Stay Safe!</string>
+    <string name="contactme">Find me on Facebook or Linkedin.\nDrop me a mail at narendra.ju.bee@gmail.com for any issues</string>
+</resources>
